@@ -22,25 +22,23 @@
 package net.preibisch.stitcher.plugin;
 
 
-import ij.ImageJ;
-import ij.plugin.PlugIn;
-
 import java.awt.Button;
 import java.awt.TextField;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import org.scijava.command.Command;
+import org.scijava.plugin.Plugin;
+
+import ij.ImageJ;
+import ij.plugin.PlugIn;
+import mpicbg.spim.io.IOFunctions;
 import net.preibisch.mvrecon.fiji.plugin.queryXML.GenericLoadParseQueryXML;
 import net.preibisch.mvrecon.fiji.plugin.queryXML.LoadParseQueryXML;
 import net.preibisch.mvrecon.fiji.spimdata.SpimData2;
 import net.preibisch.mvrecon.fiji.spimdata.XmlIoSpimData2;
 import net.preibisch.stitcher.gui.StitchingExplorer;
-
-import org.scijava.command.Command;
-import org.scijava.plugin.Plugin;
-
-import mpicbg.spim.io.IOFunctions;
 
 @Plugin(type = Command.class, menuPath = "Plugins>BigStitcher>BigStitcher")
 public class BigStitcher implements Command, PlugIn
@@ -94,7 +92,7 @@ public class BigStitcher implements Command, PlugIn
 		else if ( !System.getProperty("os.name").toLowerCase().contains( "mac" ) )
 			GenericLoadParseQueryXML.defaultXMLfilename = "/home/preibisch/Documents/Microscopy/SPIM/HisYFP-SPIM//dataset_tp18.xml";
 		else
-			GenericLoadParseQueryXML.defaultXMLfilename = "/Users/spreibi/Documents/BIMSB/Projects/CLARITY/Big Data Sticher/Dros_converted/dataset.xml";
+			GenericLoadParseQueryXML.defaultXMLfilename = "/Users/Marwan/Desktop/grid-3d-stitched-h5/dataset.xml";
 	}
 
 	public static void main( String[] args )
