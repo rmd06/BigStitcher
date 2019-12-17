@@ -115,16 +115,11 @@
 	</repositories>
 
 	<dependencies>
-		<dependency>
-			<groupId>net.preibisch</groupId>
-			<artifactId>imagej-clustering</artifactId>
-			<version>${imagej-clustering.version}</version>
-		</dependency>
-		<dependency>
+<!-- 		<dependency>
 			<groupId>net.preibisch</groupId>
 			<artifactId>multiview-simulation</artifactId>
 			<version>${multiview-simulation.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>mpicbg</groupId>
 			<artifactId>mpicbg</artifactId>
@@ -153,10 +148,20 @@
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji-lib</artifactId>
 		</dependency>
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>net.preibisch</groupId>
 			<artifactId>multiview-reconstruction</artifactId>
 			<version>${multiview-reconstruction.version}</version>
+		</dependency> -->
+<!-- 			<dependency>
+			<groupId>net.preibisch</groupId>
+			<artifactId>distribution</artifactId>
+			<version>0.2.2-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+			<groupId>net.preibisch</groupId>
+			<artifactId>mvrecon</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.imglib2</groupId>
